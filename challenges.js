@@ -23,6 +23,7 @@ var scores, roundScore, activePlayer, gamePlaying, lastDice;
 init();
 
 
+
 // anonymous function -> that doesnt have name and cant be reused
 document.querySelector('.btn-roll').addEventListener('click', function() {
     
@@ -85,7 +86,7 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
         if(input){
              winningScore = input;
         }
-        else winningScore = 100;
+        else winningScore = 20;
         
         // Check if player won the game
         if(scores[activePlayer] >= winningScore){
@@ -145,6 +146,9 @@ function init(){
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
+    
+
+
 
     
 }
